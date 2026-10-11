@@ -1,0 +1,5 @@
+node_modules/
+.env
+*.log
+.DS_Store
+# Keep the included starter database under version control only if you intentionally want demo data.

@@ -1,0 +1,26 @@
+{
+  "name": "attendance-management-system",
+  "version": "4.0.0",
+  "description": "Upgraded college attendance management system with secure roles, subject-wise attendance, analytics and exports",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "check": "node --check server.js && node --check public/js/app.js && node --check scripts/backup.js && node --check scripts/restore.js && node --check lib-attendance.js",
+    "test": "node --test",
+    "db:backup": "node scripts/backup.js",
+    "db:restore": "node scripts/restore.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "sqlite3": "^5.1.7",
+    "exceljs": "^4.4.0",
+    "pdfkit": "^0.15.0",
+    "express-rate-limit": "^7.5.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
